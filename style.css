@@ -1,1392 +1,895 @@
-/* ===================================
-   HABIORA VA WEBSITE
-   STYLE.CSS - PART 1
-=================================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-html{
-    scroll-behavior:smooth;
-}
+    <title>Habiora VA | Virtual Assistance Agency</title>
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#f7f9fc;
-    color:#333;
-    overflow-x:hidden;
-}
+    <link rel="stylesheet" href="style.css">
 
-/* COLORS */
-
-:root{
-    --primary:#0E7490;
-    --secondary:#164E63;
-    --light:#F8FAFC;
-    --white:#ffffff;
-    --gray:#64748B;
-    --dark:#1E293B;
-    --shadow:0 10px 30px rgba(0,0,0,.08);
-    --radius:18px;
-}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-/* SECTION */
+    <!-- Icons -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-section{
-    padding:90px 10%;
-}
+<body>
 
-.section-title{
-    text-align:center;
-    margin-bottom:60px;
-}
+<!-- ================= NAVBAR ================= -->
 
-.section-title h2{
-    font-size:42px;
-    color:var(--dark);
-    margin-bottom:15px;
-}
+<header>
 
-.section-title p{
-    color:var(--gray);
-    font-size:18px;
-}
+<nav class="navbar">
 
-/* =======================
-NAVBAR
-======================= */
+<div class="logo">
+    <h2>Habiora <span>VA</span></h2>
+</div>
+<div class="menu-toggle" id="mobile-menu">
+        ☰
+    </div>
 
-/* ===========================
-        NAVBAR
-=========================== */
+<ul class="nav-links">
 
-.navbar{
+<li><a href="#home">Home</a></li>
 
-    position:fixed;
-    top:0;
-    left:0;
+<li><a href="#about">About</a></li>
 
-    width:100%;
+<li><a href="#services">Services</a></li>
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+<li><a href="#why">Why Us</a></li>
 
-    padding:18px 10%;
+<li><a href="#team">Team</a></li>
 
-    background:rgba(255,255,255,.9);
+<li><a href="#contact">Contact</a></li>
 
-    backdrop-filter:blur(15px);
+</ul>
 
-    box-shadow:0 5px 20px rgba(0,0,0,.05);
+</nav>
 
-    z-index:999;
+</header>
 
-    box-sizing:border-box;
+<!-- ================= HERO ================= -->
 
-}
+<section id="home" class="hero">
 
-.logo{
+<div class="hero-text">
 
-    font-size:28px;
-    font-weight:700;
-    color:#0b6b6b;
+<h4>WELCOME TO HABIORA VA</h4>
 
-}
+<h1>
+Helping Businesses
+<span>Scale Smarter</span>
+with Reliable Virtual Assistance
+</h1>
 
-.logo span{
+<p>
 
-    color:#16a6a3;
+Habiora VA is a modern virtual assistance and business support agency
+helping startups, real estate professionals, law firms, and
+service-based businesses streamline operations, manage leads,
+and grow efficiently through reliable remote support.
 
-}
+</p>
 
-.nav-links{
+<div class="hero-buttons">
 
-    display:flex;
-    list-style:none;
-    gap:35px;
+<a href="#services" class="primary-btn">
+Our Services
+</a>
 
-}
+<a href="#about" class="secondary-btn">
+Learn More
+</a>
 
-.nav-links li{
+</div>
 
-    list-style:none;
+</div>
 
-}
+<div class="hero-image">
 
-.nav-links a{
+<!-- Replace this with your own illustration -->
+<img src="images/hero.png" alt="Habiora VA Hero">
 
-    text-decoration:none;
-    color:#333;
-    font-weight:600;
-    transition:.3s;
+</div>
 
-}
+</section>
 
-.nav-links a:hover{
+<!-- ================= ABOUT ================= -->
 
-    color:#16a6a3;
+<section id="about" class="about">
 
-}
+<div class="section-title">
 
-/* Hamburger */
+<h2>About Habiora VA</h2>
 
-.menu-toggle{
+<p>
+Your trusted partner for modern virtual assistance and business support.
+</p>
 
-    display:none;
-    font-size:30px;
-    cursor:pointer;
+</div>
 
-}
+<div class="about-container">
 
-/* =======================
-HERO
-======================= */
+<div class="about-card">
 
-.hero{
+<h3>Company Identity</h3>
 
-    min-height:100vh;
+<p>
 
-    display:flex;
+Habiora VA is a startup virtual assistance and business support agency
+composed of a small, agile team currently consisting of two founders.
 
-    justify-content:space-between;
+We specialize in providing remote operational,
+creative, and sales support for small businesses,
+startups, real estate professionals,
+and service-based companies primarily
+in international markets.
 
-    align-items:center;
+</p>
 
-    gap:60px;
+<p>
 
-    padding-top:120px;
+We operate with the belief that being small
+is an advantage—it allows us to be:
 
-}
+</p>
 
-.hero-text{
+<ul>
 
-    flex:1;
+<li>✔ More flexible</li>
 
-}
+<li>✔ More responsive</li>
 
-.hero-text h4{
+<li>✔ More personal</li>
 
-    color:var(--primary);
+<li>✔ More adaptable to every client needs</li>
 
-    letter-spacing:2px;
+<li>✔ Faster in execution compared to large agencies</li>
 
-    margin-bottom:15px;
+</ul>
 
-}
+</div>
 
-.hero-text h1{
+<div class="about-card">
 
-    font-size:65px;
+<h3>Core Philosophy</h3>
 
-    line-height:1.15;
+<blockquote>
 
-    color:var(--dark);
+"Efficiency, clarity, and human support are what allow businesses to scale—not complexity or size."
 
-    margin-bottom:25px;
+</blockquote>
 
-}
+<p>
 
-.hero-text span{
+We believe modern businesses do not need more employees—they need better 
 
-    color:var(--primary);
+They need better systems.
 
-}
+better support,
 
-.hero-text p{
+better execution,
 
-    font-size:18px;
+Habiora VA removes operational friction so business owners can focus on what truly matters.
 
-    color:var(--gray);
+</p>
 
-    line-height:1.8;
+<ul>
 
-    margin-bottom:35px;
+<li>✔ Closing deals</li>
 
-}
+<li>✔ Growing revenue</li>
 
-.hero-buttons{
+<li>✔ Building relationships</li>
 
-    display:flex;
+<li>✔ Scaling their vision</li>
 
-    gap:20px;
+</ul>
 
-}
+</div>
 
-.primary-btn{
+</div>
 
-    text-decoration:none;
+</section>
 
-    background:var(--primary);
+<!-- ================= MISSION & VISION ================= -->
 
-    color:white;
+<section class="mission">
 
-    padding:16px 35px;
+<div class="section-title">
 
-    border-radius:50px;
+<h2>Mission & Vision</h2>
 
-    transition:.3s;
+</div>
 
-    box-shadow:var(--shadow);
+<div class="mission-grid">
 
-}
+<div class="mission-card">
 
-.primary-btn:hover{
+<i class="fa-solid fa-bullseye"></i>
 
-    transform:translateY(-5px);
+<h3>Mission</h3>
 
-    background:var(--secondary);
+<p>
 
-}
+To empower small businesses, startups, and real estate professionals by providing reliable, efficient, and high-quality virtual support that improves operations, increases productivity, and drives measurable business growth.
 
-.secondary-btn{
+We achieve this by acting as a seamless extension of our clients' teams while handling essential but time-consuming work with precision and care.
 
-    text-decoration:none;
+</p>
 
-    padding:16px 35px;
+</div>
 
-    border:2px solid var(--primary);
+<div class="mission-card">
 
-    color:var(--primary);
+<i class="fa-solid fa-eye"></i>
 
-    border-radius:50px;
+<h3>Vision</h3>
 
-    transition:.3s;
+<p>
 
-}
+To become a globally trusted virtual assistance partner known for transforming small growing teams into highly efficient and scalable businesses through smart, human-centered operational support.
 
-.secondary-btn:hover{
+We envision Habiora VA growing from a two-person startup into a globally recognized remote operations agency rooted in excellence, integrity, and measurable results.
 
-    background:var(--primary);
+</p>
 
-    color:white;
+</div>
 
-}
+</div>
 
-.hero-image{
+</section>
 
-    flex:1;
+<!-- ================= CORE VALUES ================= -->
 
-    text-align:center;
+<section id="why" class="values">
 
-}
+    <div class="section-title">
+        <h2>Our Core Values</h2>
+        <p>The principles that guide every client relationship.</p>
+    </div>
 
-.hero-image img{
+    <div class="values-container">
 
-    width:100%;
+        <div class="value-card">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h3>Integrity</h3>
+            <p>
+                We operate with honesty, transparency, and accountability in every client interaction and deliverable.
+            </p>
+        </div>
 
-    max-width:520px;
+        <div class="value-card">
+            <i class="fa-solid fa-award"></i>
+            <h3>Excellence in Execution</h3>
+            <p>
+                We focus on doing things properly, consistently, and with attention to detail—not just completing tasks.
+            </p>
+        </div>
 
-}
+        <div class="value-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Growth Mindset</h3>
+            <p>
+                We continuously learn, improve, and adapt to provide greater value to our clients.
+            </p>
+        </div>
 
-/* =======================
-ABOUT
-======================= */
+        <div class="value-card">
+            <i class="fa-solid fa-handshake"></i>
+            <h3>Ownership</h3>
+            <p>
+                We treat every client's business as if it were our own, taking responsibility for outcomes.
+            </p>
+        </div>
 
-.about{
+        <div class="value-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Efficiency</h3>
+            <p>
+                We prioritize smart systems, structure, and speed without sacrificing quality.
+            </p>
+        </div>
 
-    background:white;
+    </div>
 
-}
+</section>
 
-.about-container{
+<!-- ================= WHY CHOOSE US ================= -->
 
-    display:grid;
+<section class="why-us">
 
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    <div class="section-title">
+        <h2>Why Choose Habiora VA?</h2>
+        <p>Small team. Big impact.</p>
+    </div>
 
-    gap:35px;
+    <div class="why-container">
 
-}
+        <div class="why-left">
 
-.about-card{
+            <h3>Our Competitive Advantage</h3>
 
-    background:white;
+            <p>
 
-    border-radius:var(--radius);
+                Habiora VA's advantage is not scale—it's our approach.
 
-    padding:40px;
+                We are a modern virtual assistance agency focused on quality,
+                flexibility, and personalized support.
 
-    box-shadow:var(--shadow);
+            </p>
 
-    transition:.35s;
+            <ul>
 
-}
+                <li>✔ Fresh perspective</li>
 
-.about-card:hover{
+                <li>✔ Flexible workflows</li>
 
-    transform:translateY(-10px);
+                <li>✔ Deep integration into client systems</li>
 
-}
+                <li>✔ Affordable pricing</li>
 
-.about-card h3{
+                <li>✔ Quality over quantity</li>
 
-    margin-bottom:20px;
+                <li>✔ Fast communication</li>
 
-    color:var(--primary);
+                <li>✔ Personalized support</li>
 
-    font-size:28px;
+            </ul>
 
-}
+        </div>
 
-.about-card p{
+        <div class="why-right">
 
-    line-height:1.9;
+            <div class="feature-box">
+                <i class="fa-solid fa-user-group"></i>
+                <h4>Human-Centered</h4>
+                <p>We build relationships, not transactions.</p>
+            </div>
 
-    color:var(--gray);
+            <div class="feature-box">
+                <i class="fa-solid fa-gear"></i>
+                <h4>Smart Systems</h4>
+                <p>Better organization leads to better growth.</p>
+            </div>
 
-    margin-bottom:20px;
+            <div class="feature-box">
+                <i class="fa-solid fa-clock"></i>
+                <h4>Save Time</h4>
+                <p>Focus on revenue while we handle operations.</p>
+            </div>
 
-}
+            <div class="feature-box">
+                <i class="fa-solid fa-earth-americas"></i>
+                <h4>Global Ready</h4>
+                <p>Supporting international businesses remotely.</p>
+            </div>
 
-.about-card ul{
+        </div>
 
-    margin-left:20px;
+    </div>
 
-}
+</section>
 
-.about-card li{
+<!-- ================= SERVICES ================= -->
 
-    margin-bottom:12px;
+<section id="services" class="services">
 
-    color:var(--dark);
+    <div class="section-title">
 
-}
+        <h2>Our Services</h2>
 
-blockquote{
+        <p>
+            Multi-functional virtual business support tailored for growing companies.
+        </p>
 
-    border-left:5px solid var(--primary);
+    </div>
 
-    padding-left:20px;
+    <div class="services-grid">
 
-    font-style:italic;
+        <div class="service-card">
 
-    margin-bottom:25px;
+            <i class="fa-solid fa-users"></i>
 
-    color:var(--secondary);
+            <h3>Lead Management & Sales Support</h3>
 
-}
+            <ul>
 
-/* =======================
-MISSION
-======================= */
+                <li>Lead Generation</li>
 
-.mission{
+                <li>CRM Management</li>
 
-    background:#F8FAFC;
+                <li>Cold Outreach</li>
 
-}
+                <li>Follow-ups</li>
 
-.mission-grid{
+                <li>Appointment Setting</li>
 
-    display:grid;
+                <li>Sales Pipeline Tracking</li>
 
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+                <li>Client Communication</li>
 
-    gap:35px;
+            </ul>
 
-}
+        </div>
 
-.mission-card{
+        <div class="service-card">
 
-    background:white;
+            <i class="fa-solid fa-laptop-file"></i>
 
-    padding:40px;
+            <h3>Administrative Support</h3>
 
-    border-radius:20px;
+            <ul>
 
-    box-shadow:var(--shadow);
+                <li>Email Management</li>
 
-    text-align:center;
+                <li>Calendar Scheduling</li>
 
-}
+                <li>Data Entry</li>
 
-.mission-card i{
+                <li>Document Organization</li>
 
-    font-size:45px;
+                <li>Research Tasks</li>
 
-    color:var(--primary);
+                <li>Workflow Coordination</li>
 
-    margin-bottom:20px;
+            </ul>
 
-}
+        </div>
 
-.mission-card h3{
+        <div class="service-card">
 
-    margin-bottom:20px;
+            <i class="fa-solid fa-palette"></i>
 
-    font-size:30px;
+            <h3>Creative & Marketing Support</h3>
 
-}
+            <ul>
 
-.mission-card p{
+                <li>Graphic Design</li>
 
-    color:var(--gray);
+                <li>Social Media Graphics</li>
 
-    line-height:1.8;
+                <li>Content Scheduling</li>
 
-}
+                <li>Branding Materials</li>
 
-/*=========================================
-CORE VALUES
-=========================================*/
+                <li>Campaign Visuals</li>
 
-.values{
-    background:#ffffff;
-}
+            </ul>
 
-.values-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
+        </div>
 
-.value-card{
-    background:#fff;
-    padding:35px 30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:var(--shadow);
-    transition:.35s;
-}
+        <div class="service-card">
 
-.value-card:hover{
-    transform:translateY(-10px);
-}
+            <i class="fa-solid fa-diagram-project"></i>
 
-.value-card i{
-    font-size:45px;
-    color:var(--primary);
-    margin-bottom:20px;
-}
+            <h3>Business Operations Support</h3>
 
-.value-card h3{
-    color:var(--dark);
-    margin-bottom:15px;
-    font-size:24px;
-}
+            <ul>
 
-.value-card p{
-    color:var(--gray);
-    line-height:1.8;
-}
+                <li>SOP Creation</li>
 
-/*=========================================
-WHY US
-=========================================*/
+                <li>Workflow Organization</li>
 
-.why-us{
-    background:#F8FAFC;
-}
+                <li>Internal Systems</li>
 
-.why-container{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
+                <li>Operational Cleanup</li>
 
-.why-left h3{
-    font-size:38px;
-    color:var(--dark);
-    margin-bottom:25px;
-}
+                <li>CRM Optimization</li>
 
-.why-left p{
-    color:var(--gray);
-    line-height:1.9;
-    margin-bottom:25px;
-}
+                <li>Task Structuring</li>
 
-.why-left ul{
-    margin-left:20px;
-}
+            </ul>
 
-.why-left li{
-    margin-bottom:15px;
-    color:var(--dark);
-}
+        </div>
 
-.why-right{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
-}
+    </div>
 
-.feature-box{
-    background:#fff;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:var(--shadow);
-    transition:.35s;
-}
+</section>
 
-.feature-box:hover{
-    transform:translateY(-8px);
-}
+<!-- ================= TARGET CLIENTS ================= -->
 
-.feature-box i{
-    font-size:40px;
-    color:var(--primary);
-    margin-bottom:15px;
-}
+<section class="clients">
 
-.feature-box h4{
-    margin-bottom:12px;
-    color:var(--dark);
-}
+    <div class="section-title">
 
-.feature-box p{
-    color:var(--gray);
-    line-height:1.6;
-}
+        <h2>Who We Help</h2>
 
-/*=========================================
-SERVICES
-=========================================*/
+        <p>We partner with businesses that are ready to grow.</p>
 
-.services{
-    background:#fff;
-}
+    </div>
 
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:35px;
-}
+    <div class="client-grid">
 
-.service-card{
-    background:#fff;
-    padding:40px 30px;
-    border-radius:20px;
-    box-shadow:var(--shadow);
-    transition:.35s;
-}
+        <div class="client-card">
+            <i class="fa-solid fa-building"></i>
+            <h3>Startups</h3>
+        </div>
 
-.service-card:hover{
-    transform:translateY(-12px);
-}
+        <div class="client-card">
+            <i class="fa-solid fa-house"></i>
+            <h3>Real Estate Investors</h3>
+        </div>
 
-.service-card i{
-    font-size:45px;
-    color:var(--primary);
-    margin-bottom:20px;
-}
+        <div class="client-card">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h3>Law Firms</h3>
+        </div>
 
-.service-card h3{
-    margin-bottom:20px;
-    color:var(--dark);
-    font-size:24px;
-}
+        <div class="client-card">
+            <i class="fa-solid fa-chart-simple"></i>
+            <h3>Marketing Agencies</h3>
+        </div>
 
-.service-card ul{
-    margin-left:18px;
-}
+        <div class="client-card">
+            <i class="fa-solid fa-city"></i>
+            <h3>Property Management</h3>
+        </div>
 
-.service-card li{
-    margin-bottom:12px;
-    color:var(--gray);
-    line-height:1.7;
-}
+        <div class="client-card">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Service Businesses</h3>
+        </div>
 
-/*=========================================
-TARGET CLIENTS
-=========================================*/
+    </div>
 
-.clients{
-    background:#F8FAFC;
-}
+</section>
 
-.client-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
-}
+<!-- ================= FOUNDERS ================= -->
 
-.client-card{
-    background:#fff;
-    padding:40px 25px;
-    text-align:center;
-    border-radius:20px;
-    box-shadow:var(--shadow);
-    transition:.35s;
-}
+<section id="team" class="team">
 
-.client-card:hover{
-    transform:translateY(-10px);
-}
+    <div class="section-title">
+        <h2>Meet the Founders</h2>
+        <p>The people behind Habiora VA.</p>
+    </div>
 
-.client-card i{
-    font-size:45px;
-    color:var(--primary);
-    margin-bottom:18px;
-}
+    <div class="team-container">
 
-.client-card h3{
-    color:var(--dark);
-    font-size:22px;
-}
+        <div class="team-text">
 
-/*=========================================
-SECTION SPACING
-=========================================*/
-
-.values,
-.why-us,
-.services,
-.clients{
-    padding-top:100px;
-    padding-bottom:100px;
-}
+            <h3>Built by Passionate Professionals</h3>
 
-/*=========================================
-CORE VALUES
-=========================================*/
+            <p>
+                Habiora VA is led by two founders committed to helping businesses
+                become more organized, efficient, and scalable through dependable
+                virtual assistance and operational support.
+            </p>
 
-.values{
-    background:#ffffff;
-}
+            <p>
+                One founder brings legal training, a psychology background as a
+                Registered Psychometrician in the Philippines, strong communication
+                skills, structured workflow experience, and expertise in client
+                relations and business operations.
+            </p>
 
-.values-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
+            <p>
+                Together, the founders combine operational discipline, adaptability,
+                creativity, and a growth mindset to deliver exceptional service to
+                every client.
+            </p>
 
-.value-card{
-    background:#fff;
-    padding:35px 30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:var(--shadow);
-    transition:.35s;
-}
+        </div>
 
-.value-card:hover{
-    transform:translateY(-10px);
-}
+        <div class="team-image">
 
-.value-card i{
-    font-size:45px;
-    color:var(--primary);
-    margin-bottom:20px;
-}
+            <!-- Replace with your own image -->
+            <img src="images/founders.png" alt="Founders">
 
-.value-card h3{
-    color:var(--dark);
-    margin-bottom:15px;
-    font-size:24px;
-}
+        </div>
 
-.value-card p{
-    color:var(--gray);
-    line-height:1.8;
-}
+    </div>
 
-/*=========================================
-WHY US
-=========================================*/
+</section>
 
-.why-us{
-    background:#F8FAFC;
-}
+<!-- ================= BUSINESS OBJECTIVES ================= -->
 
-.why-container{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
+<section class="objectives">
 
-.why-left h3{
-    font-size:38px;
-    color:var(--dark);
-    margin-bottom:25px;
-}
+    <div class="section-title">
+        <h2>Business Objectives</h2>
+        <p>Our roadmap for growth.</p>
+    </div>
 
-.why-left p{
-    color:var(--gray);
-    line-height:1.9;
-    margin-bottom:25px;
-}
+    <div class="objective-grid">
 
-.why-left ul{
-    margin-left:20px;
-}
+        <div class="objective-card">
 
-.why-left li{
-    margin-bottom:15px;
-    color:var(--dark);
-}
+            <h3>Short-Term Goals</h3>
 
-.why-right{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
-}
+            <ul>
 
-.feature-box{
-    background:#fff;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:var(--shadow);
-    transition:.35s;
-}
+                <li>Acquire the first 3–10 international clients.</li>
 
-.feature-box:hover{
-    transform:translateY(-8px);
-}
+                <li>Develop strong case studies and client success stories.</li>
 
-.feature-box i{
-    font-size:40px;
-    color:var(--primary);
-    margin-bottom:15px;
-}
+                <li>Refine outreach and lead conversion systems.</li>
 
-.feature-box h4{
-    margin-bottom:12px;
-    color:var(--dark);
-}
+                <li>Establish recurring monthly revenue.</li>
 
-.feature-box p{
-    color:var(--gray);
-    line-height:1.6;
-}
+                <li>Create scalable SOPs for future expansion.</li>
 
-/*=========================================
-SERVICES
-=========================================*/
+            </ul>
 
-.services{
-    background:#fff;
-}
+        </div>
 
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:35px;
-}
+        <div class="objective-card">
 
-.service-card{
-    background:#fff;
-    padding:40px 30px;
-    border-radius:20px;
-    box-shadow:var(--shadow);
-    transition:.35s;
-}
+            <h3>Long-Term Goals</h3>
 
-.service-card:hover{
-    transform:translateY(-12px);
-}
+            <ul>
 
-.service-card i{
-    font-size:45px;
-    color:var(--primary);
-    margin-bottom:20px;
-}
+                <li>Become a globally recognized VA agency.</li>
 
-.service-card h3{
-    margin-bottom:20px;
-    color:var(--dark);
-    font-size:24px;
-}
+                <li>Build specialized departments.</li>
 
-.service-card ul{
-    margin-left:18px;
-}
+                <li>Expand opportunities for Filipino remote professionals.</li>
 
-.service-card li{
-    margin-bottom:12px;
-    color:var(--gray);
-    line-height:1.7;
-}
+                <li>Create industry-specific service packages.</li>
 
-/*=========================================
-TARGET CLIENTS
-=========================================*/
+                <li>Scale into a team-led organization.</li>
 
-.clients{
-    background:#F8FAFC;
-}
+            </ul>
 
-.client-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
-}
+        </div>
 
-.client-card{
-    background:#fff;
-    padding:40px 25px;
-    text-align:center;
-    border-radius:20px;
-    box-shadow:var(--shadow);
-    transition:.35s;
-}
+    </div>
 
-.client-card:hover{
-    transform:translateY(-10px);
-}
+</section>
 
-.client-card i{
-    font-size:45px;
-    color:var(--primary);
-    margin-bottom:18px;
-}
+<!-- ================= BRAND POSITION ================= -->
 
-.client-card h3{
-    color:var(--dark);
-    font-size:22px;
-}
+<section class="position">
 
-/*=========================================
-SECTION SPACING
-=========================================*/
-
-.values,
-.why-us,
-.services,
-.clients{
-    padding-top:100px;
-    padding-bottom:100px;
-}
+    <div class="section-title">
+        <h2>Brand Positioning</h2>
+    </div>
 
-.contact{
-    padding:100px 10%;
-    background:#f8fafc;
-}
+    <div class="position-box">
 
-.contact-container{
-    display:flex;
-    justify-content:center;
-}
+        <p>
 
-.contact-info{
-    max-width:700px;
-    text-align:center;
-}
+Habiora VA is a modern virtual assistance agency that helps small businesses,
+startups, and real estate professionals streamline operations, manage leads,
+and scale efficiently through reliable remote support.
 
-.contact-info h3{
-    font-size:32px;
-    color:#0f766e;
-    margin-bottom:20px;
-}
+        </p>
 
-.contact-info p{
-    font-size:17px;
-    line-height:1.8;
-    color:#555;
-    margin:10px 0;
-}
+        <p>
 
-.call-btn{
+We combine operational discipline, sales support expertise,
+creative assistance, and human-centered execution to help businesses
+grow without the burden of hiring full-time staff.
 
-    margin-top:35px;
+        </p>
 
-    padding:16px 40px;
+    </div>
 
-    background:#0f766e;
+</section>
 
-    color:white;
+<!-- ================= OPERATING PRINCIPLE ================= -->
 
-    border:none;
+<section class="principle">
 
-    border-radius:50px;
+    <div class="section-title">
+        <h2>Our Operating Principle</h2>
+    </div>
 
-    font-size:17px;
+    <div class="principle-box">
 
-    font-weight:bold;
+        <h3>
 
-    cursor:pointer;
+"Does this help a business owner save time,
+close more deals,
+or operate more efficiently?"
 
-    transition:.3s;
-}
+        </h3>
 
-.call-btn:hover{
+        <p>If yes — we do it.</p>
 
-    transform:translateY(-4px);
+        <p>If no — we improve it.</p>
 
-    background:#115e59;
+    </div>
 
-}
+</section>
 
-/* ===========================
-   BOOKING MODAL
-=========================== */
+<!-- ================= CONTACT ================= -->
 
-.modal{
+<section id="contact" class="contact">
 
-    display:none;
+    <div class="section-title">
+        <h2>Let's Build Something Great Together</h2>
 
-    position:fixed;
+        <p>
+            Whether you're looking to streamline operations, generate more leads,
+            or free up valuable time, Habiora VA is ready to help your business grow.
+        </p>
+    </div>
 
-    top:0;
-    left:0;
+    <div class="contact-container">
 
-    width:100%;
-    height:100%;
+        <div class="contact-info">
 
-    background:rgba(0,0,0,.65);
+            <h3>Get In Touch</h3>
 
-    justify-content:center;
+            <p>📧 habiorava@gmail.com</p>
 
-    align-items:center;
+            <p>📍 Philippines</p>
 
-    z-index:9999;
+            <p>🕒 Monday – Friday</p>
 
-}
+            <p>⏰ 8:00 AM – 6:00 PM (PHT)</p>
+
+            <p>
+                We'd love to learn more about your business and discuss how
+                Habiora VA can become your trusted remote operations partner.
+            </p>
+
+            <button id="openModal" class="call-btn">
+                📅 Book a Free Discovery Call
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+</form>
+    </div>
+
+</section>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-logo">
+
+<h2>Habiora <span>VA</span></h2>
+
+<p>
+
+Helping businesses scale smarter through reliable,
+human-centered virtual assistance.
+
+</p>
+
+</div>
 
-.modal-content{
+<div class="footer-links">
 
-    width:500px;
+<h3>Quick Links</h3>
 
-    max-width:90%;
+<a href="#home">Home</a>
 
-    background:white;
+<a href="#about">About</a>
 
-    padding:35px;
+<a href="#services">Services</a>
 
-    border-radius:15px;
+<a href="#team">Team</a>
 
-    position:relative;
+<a href="#contact">Contact</a>
 
-    animation:popup .3s;
+</div>
 
+<div class="footer-services">
+
+<h3>Services</h3>
+
+<p>Lead Management</p>
+
+<p>Administrative Support</p>
+
+<p>Creative Support</p>
+
+<p>Business Operations</p>
+
+</div>
+
+<div class="footer-social">
+
+<h3>Follow Us</h3>
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fas fa-envelope"></i></a>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+<p>
+
+© 2026 Habiora VA. All Rights Reserved.
+
+<div id="bookingModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2>Book a Free Discovery Call</h2>
+
+        <p>
+            Complete the form below and our team will contact you to confirm your appointment.
+        </p>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="text" placeholder="Business / Company">
+
+            <input type="tel" placeholder="Phone Number">
+
+            <select required>
+                <option value="">Select a Service</option>
+                <option>Lead Generation</option>
+                <option>Administrative Support</option>
+                <option>Creative & Marketing Support</option>
+                <option>Business Operations Support</option>
+            </select>
+
+            <input type="date">
+
+            <input type="time">
+
+            <textarea rows="5" placeholder="Tell us about your business or project"></textarea>
+
+            <button type="submit" class="submit-btn">
+                Schedule My Call
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+<script>
+
+const modal = document.getElementById("bookingModal");
+
+const openBtn = document.getElementById("openModal");
+
+const closeBtn = document.querySelector(".close");
+
+openBtn.onclick = function(){
+
+    modal.style.display = "flex";
+
+}
+
+closeBtn.onclick = function(){
+
+    modal.style.display = "none";
+
 }
+
+window.onclick = function(event){
 
-@keyframes popup{
+    if(event.target == modal){
 
-    from{
-        transform:scale(.8);
-        opacity:0;
-    }
+        modal.style.display = "none";
 
-    to{
-        transform:scale(1);
-        opacity:1;
     }
 
 }
 
-.modal-content h2{
 
-    color:#0f766e;
-
-    margin-bottom:10px;
-
-}
-
-.modal-content p{
-
-    color:#666;
-
-    margin-bottom:25px;
-
-}
-
-.modal-content input,
-.modal-content select,
-.modal-content textarea{
-
-    width:100%;
-
-    padding:12px;
-
-    margin:10px 0;
-
-    border:1px solid #ddd;
-
-    border-radius:8px;
-
-    font-size:15px;
-
-    box-sizing:border-box;
-
-}
-
-.submit-btn{
-
-    width:100%;
-
-    padding:15px;
-
-    border:none;
-
-    border-radius:8px;
-
-    background:#0f766e;
-
-    color:white;
-
-    font-size:17px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.submit-btn:hover{
-
-    background:#115e59;
-
-}
-
-.close{
-
-    position:absolute;
-
-    right:20px;
-
-    top:15px;
-
-    font-size:28px;
-
-    cursor:pointer;
-
-}
-
-.contact-container{
-    display:flex;
-    justify-content:center;
-}
-
-.contact-form{
-    width:700px;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea{
-    width:100%;
-    padding:16px;
-    border:1px solid #ddd;
-    border-radius:12px;
-    font-size:16px;
-    font-family:inherit;
-    outline:none;
-}
-
-.contact-form textarea{
-    resize:none;
-}
-
-.contact-form button{
-    padding:18px;
-    background:#0f7a94;
-    color:white;
-    border:none;
-    border-radius:12px;
-    font-size:18px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.contact-form button:hover{
-    background:#09596d;
-}
-
-.contact{
-    padding:100px 10%;
-    background:#f8fafc;
-}
-
-.contact-container{
-    display:flex;
-    justify-content:center;
-}
-
-.contact-info{
-    max-width:700px;
-    text-align:center;
-}
-
-.contact-info h3{
-    font-size:32px;
-    color:#0f766e;
-    margin-bottom:20px;
-}
-
-.contact-info p{
-    font-size:17px;
-    line-height:1.8;
-    color:#555;
-    margin:10px 0;
-}
-
-.call-btn{
-
-    margin-top:35px;
-
-    padding:16px 40px;
-
-    background:#0f766e;
-
-    color:white;
-
-    border:none;
-
-    border-radius:50px;
-
-    font-size:17px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.3s;
-}
-
-.call-btn:hover{
-
-    transform:translateY(-4px);
-
-    background:#115e59;
-
-}
-
-/* ===========================
-   BOOKING MODAL
-=========================== */
-
-.modal{
-
-    display:none;
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,.65);
-
-    justify-content:center;
-
-    align-items:center;
-
-    z-index:9999;
-
-}
-
-.modal-content{
-
-    width:500px;
-
-    max-width:90%;
-
-    background:white;
-
-    padding:35px;
-
-    border-radius:15px;
-
-    position:relative;
-
-    animation:popup .3s;
-
-}
-
-@keyframes popup{
-
-    from{
-        transform:scale(.8);
-        opacity:0;
-    }
-
-    to{
-        transform:scale(1);
-        opacity:1;
-    }
-
-}
-
-.modal-content h2{
-
-    color:#0f766e;
-
-    margin-bottom:10px;
-
-}
-
-.modal-content p{
-
-    color:#666;
-
-    margin-bottom:25px;
-
-}
-
-.modal-content input,
-.modal-content select,
-.modal-content textarea{
-
-    width:100%;
-
-    padding:12px;
-
-    margin:10px 0;
-
-    border:1px solid #ddd;
-
-    border-radius:8px;
-
-    font-size:15px;
-
-    box-sizing:border-box;
-
-}
-
-.submit-btn{
-
-    width:100%;
-
-    padding:15px;
-
-    border:none;
-
-    border-radius:8px;
-
-    background:#0f766e;
-
-    color:white;
-
-    font-size:17px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.submit-btn:hover{
-
-    background:#115e59;
-
-}
-
-.close{
-
-    position:absolute;
-
-    right:20px;
-
-    top:15px;
-
-    font-size:28px;
-
-    cursor:pointer;
-
-}
-
-@media screen and (max-width:768px){
-
-    .navbar{
-        width:95%;
-    }
-
-    .menu ul{
-        flex-direction:column;
-        align-items:center;
-        gap:15px;
-    }
-
-    .hero{
-        flex-direction:column;
-        text-align:center;
-        padding:60px 20px;
-    }
-
-    .hero-content{
-        width:100%;
-    }
-
-    .hero-image{
-        width:100%;
-        margin-top:30px;
-    }
-
-    .services-grid,
-    .values-grid{
-        grid-template-columns:1fr;
-    }
-
-    .contact-container{
-        flex-direction:column;
-    }
-
-    .contact-form{
-        width:100%;
-    }
-
-}
-
-/* ===========================
-        MOBILE
-=========================== */
-
-@media (max-width:768px){
-
-.navbar{
-
-    padding:18px 7%;
-
-}
-
-.menu-toggle{
-
-    display:block;
-
-}
-
-.nav-links{
-
-    position:absolute;
-
-    top:80px;
-    left:0;
-
-    width:100%;
-
-    background:white;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    max-height:0;
-
-    overflow:hidden;
-
-    transition:.4s;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-
-}
-
-.nav-links.active{
-
-    max-height:500px;
-
-    padding:20px 0;
-
-}
-
-.nav-links li{
-
-    margin:15px 0;
-
-}
-
-}
