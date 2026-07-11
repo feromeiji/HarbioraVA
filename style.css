@@ -84,7 +84,7 @@ NAVBAR
 
     box-shadow:0 5px 20px rgba(0,0,0,.05);
 
-    z-index:999;
+    z-index:10000;
 
     box-sizing:border-box;
 
@@ -1305,19 +1305,24 @@ SECTION SPACING
         display:block;
     }
 
-    .nav-links{
-        position:absolute;
-        top:80px;
-        left:0;
-        width:100%;
-        background:white;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        max-height:0;
-        overflow:hidden;
-        transition:.4s;
-        box-shadow:0 8px 20px rgba(0,0,0,.08);
+   .nav-links{
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#fff;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    max-height:0;
+    overflow:hidden;
+
+    transition:.4s ease;
+
+    z-index:9999;
+}
     }
 
     .nav-links.active{
