@@ -1,65 +1,151 @@
-// ===========================
-// HABIORA VA JAVASCRIPT
-// Part 1
-// ===========================
+// ==========================================
+// HABIORA VA
+// script.js
+// ==========================================
 
-// Smooth scrolling for navigation links
+// ===============================
+// Smooth Scrolling
+// ===============================
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
+
+    anchor.addEventListener("click", function(e){
+
         e.preventDefault();
 
         const target = document.querySelector(this.getAttribute("href"));
 
         if(target){
+
             target.scrollIntoView({
-                behavior: "smooth"
+
+                behavior:"smooth"
+
             });
+
         }
+
     });
+
 });
 
-// Navbar background on scroll
+// ===============================
+// Sticky Navbar
+// ===============================
+
 const navbar = document.querySelector(".navbar");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",()=>{
 
     if(window.scrollY > 60){
+
         navbar.classList.add("sticky");
-    }else{
+
+    }
+
+    else{
+
         navbar.classList.remove("sticky");
+
     }
 
 });
 
-// Back To Top Button
-const backTop = document.querySelector(".back-top");
+// ===============================
+// Mobile Menu
+// ===============================
 
-window.addEventListener("scroll", () => {
+const menu = document.getElementById("mobile-menu");
 
-    if(window.scrollY > 500){
-        backTop.style.display = "flex";
-    }else{
-        backTop.style.display = "none";
+const nav = document.querySelector(".nav-links");
+
+menu.addEventListener("click",()=>{
+
+    nav.classList.toggle("active");
+
+});
+
+// Close menu after clicking a link
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        nav.classList.remove("active");
+
+    });
+
+});
+
+// ===============================
+// Booking Popup
+// ===============================
+
+const modal = document.getElementById("bookingModal");
+
+const openBtn = document.getElementById("openModal");
+
+const closeBtn = document.querySelector(".close");
+
+openBtn.addEventListener("click",()=>{
+
+    modal.style.display="flex";
+
+});
+
+closeBtn.addEventListener("click",()=>{
+
+    modal.style.display="none";
+
+});
+
+window.addEventListener("click",(e)=>{
+
+    if(e.target===modal){
+
+        modal.style.display="none";
+
     }
 
 });
 
-// Scroll Reveal Animation
-const reveals = document.querySelectorAll("section");
+// ===============================
+// Booking Form
+// ===============================
+
+const bookingForm = document.getElementById("bookingForm");
+
+bookingForm.addEventListener("submit",(e)=>{
+
+    e.preventDefault();
+
+    alert("🎉 Thank you for booking a Discovery Call! We will contact you shortly.");
+
+    modal.style.display="none";
+
+    bookingForm.reset();
+
+});
+
+// ===============================
+// Scroll Animation
+// ===============================
+
+const sections = document.querySelectorAll("section");
 
 function revealSections(){
 
-    reveals.forEach(section=>{
+    sections.forEach(section=>{
 
         const windowHeight = window.innerHeight;
 
         const sectionTop = section.getBoundingClientRect().top;
 
-        const revealPoint = 120;
+        if(sectionTop < windowHeight - 120){
 
-        if(sectionTop < windowHeight - revealPoint){
+            section.style.opacity = "1";
 
-            section.classList.add("active");
+            section.style.transform = "translateY(0)";
 
         }
 
@@ -67,15 +153,61 @@ function revealSections(){
 
 }
 
-window.addEventListener("scroll", revealSections);
+sections.forEach(section=>{
+
+    section.style.opacity="0";
+
+    section.style.transform="translateY(40px)";
+
+    section.style.transition=".6s ease";
+
+});
+
+window.addEventListener("scroll",revealSections);
 
 revealSections();
 
-const menu = document.getElementById("mobile-menu");
-const nav = document.querySelector(".nav-links");
+// BOOKING POPUP
 
-if (menu && nav) {
-    menu.addEventListener('click', () => {
-        nav.classList.toggle("active");
-    });
-}
+const modal = document.getElementById("bookingModal");
+
+const openBtn = document.getElementById("openModal");
+
+const closeBtn = document.querySelector(".close");
+
+const bookingForm = document.getElementById("bookingForm");
+
+openBtn.addEventListener("click", () => {
+
+    modal.style.display = "flex";
+
+});
+
+closeBtn.addEventListener("click", () => {
+
+    modal.style.display = "none";
+
+});
+
+window.addEventListener("click", (e) => {
+
+    if(e.target === modal){
+
+        modal.style.display = "none";
+
+    }
+
+});
+
+bookingForm.addEventListener("submit", (e) => {
+
+    e.preventDefault();
+
+    alert("✅ Thank you! Your booking request has been received.");
+
+    bookingForm.reset();
+
+    modal.style.display = "none";
+
+});
+
