@@ -332,48 +332,21 @@ document.body.style.overflow="auto";
 FAQ
 =========================================================*/
 
-document.querySelectorAll(".faq-question").forEach(question=>{
+/* FAQ Accordion */
 
-question.addEventListener("click",()=>{
+const faqItems = document.querySelectorAll(".faq-item");
 
-const answer=question.nextElementSibling;
+faqItems.forEach(item => {
 
-const icon=question.querySelector("i");
+    const button = item.querySelector(".faq-question");
 
-if(answer.style.display==="block"){
+    button.addEventListener("click", () => {
 
-answer.style.display="none";
+        item.classList.toggle("active");
 
-icon.classList.replace("fa-minus","fa-plus");
-
-}
-
-else{
-
-document.querySelectorAll(".faq-answer").forEach(item=>{
-
-item.style.display="none";
+    });
 
 });
-
-document.querySelectorAll(".faq-question i").forEach(i=>{
-
-i.classList.remove("fa-minus");
-
-i.classList.add("fa-plus");
-
-});
-
-answer.style.display="block";
-
-icon.classList.replace("fa-plus","fa-minus");
-
-}
-
-});
-
-});
-
 /*=========================================================
 AUTO TESTIMONIALS
 =========================================================*/
@@ -712,3 +685,122 @@ menuToggle.addEventListener("click", ()=>{
     navLinks.classList.toggle("active");
 
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+
+const navLinks = document.querySelector(".nav-links");
+
+
+menuToggle.addEventListener("click",()=>{
+
+navLinks.classList.toggle("active");
+
+});
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+navLinks.classList.remove("active");
+
+});
+
+});
+/* =========================================
+BUSINESS OBJECTIVES
+========================================= */
+
+.objectives{
+
+padding:110px 8%;
+
+}
+
+.objectives-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:35px;
+
+margin-top:60px;
+
+}
+
+.objective-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:24px;
+
+padding:40px;
+
+transition:.35s;
+
+}
+
+.objective-card:hover{
+
+transform:translateY(-10px);
+
+border-color:rgba(255,255,255,.18);
+
+}
+
+.objective-icon{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:rgba(255,255,255,.08);
+
+margin-bottom:25px;
+
+font-size:30px;
+
+}
+
+.objective-card h3{
+
+margin-bottom:20px;
+
+font-size:28px;
+
+}
+
+.objective-card ul{
+
+padding-left:20px;
+
+line-height:2;
+
+}
+
+.objective-card li{
+
+margin-bottom:10px;
+
+}
+
+@media(max-width:768px){
+
+.objectives-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
