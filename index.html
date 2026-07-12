@@ -4,28 +4,96 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Habiora VA | Modern Virtual Assistance Agency</title>
+    <title>Habiora VA | Premium Virtual Assistance Agency</title>
 
     <meta name="description"
-        content="Habiora VA helps businesses streamline operations, manage leads, and scale through reliable virtual assistance.">
+        content="Helping businesses scale smarter through premium virtual assistance, operations support, and creative solutions.">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
+<!-- ===========================
+LOADING SCREEN
+=========================== -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <h1>Habiora VA</h1>
+
+        <p>Preparing your experience...</p>
+
+        <div class="loader-line">
+
+            <span></span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+CUSTOM CURSOR
+=========================== -->
+
+<div class="cursor"></div>
+
+<div class="cursor-glow"></div>
+
+<!-- ===========================
+BACKGROUND EFFECTS
+=========================== -->
+
+<div class="background">
+
+    <div class="gradient gradient-one"></div>
+
+    <div class="gradient gradient-two"></div>
+
+    <div class="gradient gradient-three"></div>
+
+    <div class="orb orb-one"></div>
+
+    <div class="orb orb-two"></div>
+
+    <div class="orb orb-three"></div>
+
+    <div class="noise"></div>
+
+</div>
+
+<!-- ===========================
+PROGRESS BAR
+=========================== -->
+
+<div id="progressBar"></div>
+
+<!-- ===========================
+HEADER
+=========================== -->
 
 <header>
 
@@ -33,13 +101,9 @@
 
 <div class="logo">
 
-<h2>Habiora <span>VA</span></h2>
+<img src="images/logo.png" alt="Habiora VA">
 
-</div>
-
-<div class="menu-toggle" id="mobile-menu">
-
-<i class="fas fa-bars"></i>
+<span>Habiora VA</span>
 
 </div>
 
@@ -51,55 +115,838 @@
 
 <li><a href="#services">Services</a></li>
 
-<li><a href="#clients">Clients</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
 
-<li><a href="#team">Team</a></li>
+<li><a href="#process">Process</a></li>
 
 <li><a href="#contact">Contact</a></li>
 
 </ul>
 
+<div class="nav-buttons">
+
+<a href="#portfolio" class="outline-btn">
+
+Portfolio
+
+</a>
+
+<button class="primary-btn" id="openModal">
+
+Book a Call
+
+</button>
+
+</div>
+
+<div class="menu-toggle">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
 </nav>
 
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ===========================
+HERO
+=========================== -->
 
 <section class="hero" id="home">
 
-<div class="hero-content">
+<div class="hero-left">
 
-<div class="hero-text">
+<div class="hero-badge">
 
-<h4>WELCOME TO HABIORA VA</h4>
+<i class="fa-solid fa-circle"></i>
+
+Premium Virtual Assistance
+
+</div>
 
 <h1>
 
-Helping Businesses
+Helping
 
-<span>Scale Smarter</span>
+<span>Businesses</span>
 
-Through Reliable Virtual Assistance
+Scale Smarter
 
 </h1>
 
 <p>
 
-Habiora VA is a modern virtual assistance and business support agency helping startups, real estate professionals, law firms, marketing agencies, and service-based businesses streamline operations, manage leads, and grow efficiently through dependable remote support.
+Habiora VA is a premium virtual assistance agency helping entrepreneurs, startups, agencies, law firms, and real estate professionals streamline operations through dependable remote support.
 
 </p>
 
 <div class="hero-buttons">
 
-<a href="#services" class="primary-btn">
+<button class="primary-btn" id="openModal">
+
+Book Free Discovery Call
+
+</button>
+
+<a href="#services" class="secondary-btn">
 
 Explore Services
 
 </a>
 
-<button class="secondary-btn" id="openModal">
+</div>
 
-Book a Free Discovery Call
+<div class="hero-stats">
+
+<div class="stat">
+
+<h2 class="counter" data-target="100">0</h2>
+
+<p>Projects</p>
+
+</div>
+
+<div class="stat">
+
+<h2>24/7</h2>
+
+<p>Support</p>
+
+</div>
+
+<div class="stat">
+
+<h2>100%</h2>
+
+<p>Commitment</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="hero-image">
+
+<img src="images/hero.png" alt="Habiora VA">
+
+<div class="floating-card card-one">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h4>Lead Growth</h4>
+
+<p>CRM • Sales • Outreach</p>
+
+</div>
+
+<div class="floating-card card-two">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+<h4>Scheduling</h4>
+
+<p>Meetings & Calendar</p>
+
+</div>
+
+<div class="floating-card card-three">
+
+<i class="fa-solid fa-palette"></i>
+
+<h4>Creative Design</h4>
+
+<p>Graphics & Branding</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="scroll-indicator">
+
+<span></span>
+
+</div>
+<!-- =========================================
+ABOUT
+========================================= -->
+
+<section class="about" id="about">
+
+<div class="section-header">
+
+<span>ABOUT US</span>
+
+<h2>
+
+More Than Virtual Assistants.
+
+Your Growth Partner.
+
+</h2>
+
+<p>
+
+Habiora VA helps entrepreneurs eliminate repetitive work,
+optimize systems, and build scalable businesses through
+professional virtual assistance and creative support.
+
+</p>
+
+</div>
+
+<div class="about-container">
+
+<div class="about-image">
+
+<img src="images/about.jpg" alt="Habiora Team">
+
+<div class="experience-badge">
+
+<h2>2+</h2>
+
+<p>Years Combined Experience</p>
+
+</div>
+
+</div>
+
+<div class="about-content">
+
+<div class="about-item">
+
+<div class="number">
+
+01
+
+</div>
+
+<div>
+
+<h3>
+
+Mission
+
+</h3>
+
+<p>
+
+To empower businesses through dependable,
+organized, and innovative virtual assistance
+that creates measurable business growth.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="about-item">
+
+<div class="number">
+
+02
+
+</div>
+
+<div>
+
+<h3>
+
+Vision
+
+</h3>
+
+<p>
+
+To become one of the Philippines'
+most trusted premium virtual assistance agencies
+serving businesses worldwide.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="about-item">
+
+<div class="number">
+
+03
+
+</div>
+
+<div>
+
+<h3>
+
+Our Philosophy
+
+</h3>
+
+<p>
+
+Efficiency,
+clarity,
+and genuine human support create
+strong businesses—not unnecessary complexity.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+CORE VALUES
+========================================= -->
+
+<section class="values">
+
+<div class="section-header">
+
+<span>OUR VALUES</span>
+
+<h2>
+
+Built On Principles
+
+That Never Change
+
+</h2>
+
+</div>
+
+<div class="values-grid">
+
+<div class="value-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>
+
+Integrity
+
+</h3>
+
+<p>
+
+We build relationships based on trust,
+transparency, and accountability.
+
+</p>
+
+</div>
+
+<div class="value-card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>
+
+Efficiency
+
+</h3>
+
+<p>
+
+We simplify processes to save businesses
+valuable time every day.
+
+</p>
+
+</div>
+
+<div class="value-card">
+
+<i class="fa-solid fa-lightbulb"></i>
+
+<h3>
+
+Innovation
+
+</h3>
+
+<p>
+
+We continuously improve systems,
+strategies, and workflows.
+
+</p>
+
+</div>
+
+<div class="value-card">
+
+<i class="fa-solid fa-heart"></i>
+
+<h3>
+
+Human Support
+
+</h3>
+
+<p>
+
+Behind every successful business
+are genuine people who truly care.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+PROCESS
+========================================= -->
+
+<section class="process" id="process">
+
+<div class="section-header">
+
+<span>OUR PROCESS</span>
+
+<h2>
+
+A Simple Process
+
+Designed For Results
+
+</h2>
+
+<p>
+
+Every partnership follows a proven workflow that
+keeps communication clear and projects organized.
+
+</p>
+
+</div>
+
+<div class="process-container">
+
+<div class="process-step">
+
+<div class="circle">
+
+01
+
+</div>
+
+<h3>
+
+Discover
+
+</h3>
+
+<p>
+
+We learn about your business,
+your goals,
+and your biggest operational challenges.
+
+</p>
+
+</div>
+
+<div class="process-line"></div>
+
+<div class="process-step">
+
+<div class="circle">
+
+02
+
+</div>
+
+<h3>
+
+Strategy
+
+</h3>
+
+<p>
+
+We identify opportunities,
+recommend solutions,
+and build an efficient workflow.
+
+</p>
+
+</div>
+
+<div class="process-line"></div>
+
+<div class="process-step">
+
+<div class="circle">
+
+03
+
+</div>
+
+<h3>
+
+Execute
+
+</h3>
+
+<p>
+
+Our team implements systems,
+supports operations,
+and keeps everything organized.
+
+</p>
+
+</div>
+
+<div class="process-line"></div>
+
+<div class="process-step">
+
+<div class="circle">
+
+04
+
+</div>
+
+<h3>
+
+Grow
+
+</h3>
+
+<p>
+
+As your business grows,
+our support evolves with you.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+SERVICES
+========================================= -->
+
+<section class="services" id="services">
+
+<div class="section-header">
+
+<span>SERVICES</span>
+
+<h2>
+
+Professional Solutions
+
+For Modern Businesses
+
+</h2>
+
+<p>
+
+Everything your business needs
+to operate efficiently under one agency.
+
+</p>
+
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h3>
+
+Lead Generation
+
+</h3>
+
+<p>
+
+Find qualified leads,
+manage CRMs,
+cold outreach,
+appointment setting,
+pipeline management,
+and follow-ups.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-laptop-file"></i>
+
+<h3>
+
+Administrative Support
+
+</h3>
+
+<p>
+
+Email management,
+calendar organization,
+research,
+documentation,
+and workflow coordination.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-palette"></i>
+
+<h3>
+
+Graphic Design
+
+</h3>
+
+<p>
+
+Branding,
+social media graphics,
+marketing materials,
+presentations,
+and promotional assets.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-diagram-project"></i>
+
+<h3>
+
+Business Operations
+
+</h3>
+
+<p>
+
+SOP creation,
+automation,
+workflow optimization,
+CRM cleanup,
+and process management.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+TRUSTED BY
+========================================= -->
+
+<section class="trusted">
+
+<div class="section-header">
+
+<span>WHO WE SERVE</span>
+
+<h2>
+
+Industries We Support
+
+</h2>
+
+</div>
+
+<div class="trusted-slider">
+
+<div class="trusted-item">
+
+<i class="fa-solid fa-house"></i>
+
+<p>
+
+Real Estate
+
+</p>
+
+</div>
+
+<div class="trusted-item">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<p>
+
+Law Firms
+
+</p>
+
+</div>
+
+<div class="trusted-item">
+
+<i class="fa-solid fa-bullhorn"></i>
+
+<p>
+
+Marketing Agencies
+
+</p>
+
+</div>
+
+<div class="trusted-item">
+
+<i class="fa-solid fa-rocket"></i>
+
+<p>
+
+Startups
+
+</p>
+
+</div>
+
+<div class="trusted-item">
+
+<i class="fa-solid fa-briefcase"></i>
+
+<p>
+
+Service Businesses
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+PORTFOLIO
+========================================= -->
+
+<section class="portfolio" id="portfolio">
+
+<div class="section-header">
+
+<span>SELECTED WORK</span>
+
+<h2>
+
+Designs That Help
+Businesses Stand Out
+
+</h2>
+
+<p>
+
+Every project is created with strategy,
+creativity,
+and business growth in mind.
+
+</p>
+
+</div>
+
+<!-- FILTERS -->
+
+<div class="portfolio-filter">
+
+<button class="active" data-filter="all">
+
+All
+
+</button>
+
+<button data-filter="branding">
+
+Branding
+
+</button>
+
+<button data-filter="social">
+
+Social Media
+
+</button>
+
+<button data-filter="presentation">
+
+Presentations
+
+</button>
+
+<button data-filter="marketing">
+
+Marketing
+
+</button>
+
+</div>
+
+<!-- GRID -->
+
+<div class="portfolio-grid">
+
+<!-- 1 -->
+
+<div class="portfolio-item branding featured">
+
+<img src="images/work1.jpg">
+
+<div class="portfolio-overlay">
+
+<span>Brand Identity</span>
+
+<h3>
+
+Luxury Brand Kit
+
+</h3>
+
+<button
+
+class="view-project"
+
+data-image="images/work1.jpg"
+
+data-title="Luxury Brand Kit"
+
+data-description="Complete branding package including logo, typography, color palette, business cards, and marketing assets.">
+
+View Case Study
 
 </button>
 
@@ -107,588 +954,700 @@ Book a Free Discovery Call
 
 </div>
 
-<div class="hero-image">
+<!-- 2 -->
 
-<img src="images/hero.png" alt="Habiora VA">
+<div class="portfolio-item social">
+
+<img src="images/work2.jpg">
+
+<div class="portfolio-overlay">
+
+<span>Social Media</span>
+
+<h3>
+
+Instagram Campaign
+
+</h3>
+
+<button
+
+class="view-project"
+
+data-image="images/work2.jpg"
+
+data-title="Instagram Campaign"
+
+data-description="A premium social media campaign designed to improve engagement and strengthen brand consistency.">
+
+View Case Study
+
+</button>
 
 </div>
+
+</div>
+
+<!-- 3 -->
+
+<div class="portfolio-item presentation">
+
+<img src="images/work3.jpg">
+
+<div class="portfolio-overlay">
+
+<span>Presentation</span>
+
+<h3>
+
+Investor Pitch Deck
+
+</h3>
+
+<button
+
+class="view-project"
+
+data-image="images/work3.jpg"
+
+data-title="Investor Pitch Deck"
+
+data-description="A corporate presentation focused on investor communication, storytelling, and modern visual design.">
+
+View Case Study
+
+</button>
+
+</div>
+
+</div>
+
+<!-- 4 -->
+
+<div class="portfolio-item marketing">
+
+<img src="images/work4.jpg">
+
+<div class="portfolio-overlay">
+
+<span>Marketing</span>
+
+<h3>
+
+Advertising Campaign
+
+</h3>
+
+<button
+
+class="view-project"
+
+data-image="images/work4.jpg"
+
+data-title="Advertising Campaign"
+
+data-description="Digital advertising creatives developed to maximize conversions and increase customer engagement.">
+
+View Case Study
+
+</button>
+
+</div>
+
+</div>
+
+<!-- 5 -->
+
+<div class="portfolio-item branding">
+
+<img src="images/work5.jpg">
+
+<div class="portfolio-overlay">
+
+<span>Branding</span>
+
+<h3>
+
+Restaurant Rebrand
+
+</h3>
+
+<button
+
+class="view-project"
+
+data-image="images/work5.jpg"
+
+data-title="Restaurant Rebrand"
+
+data-description="A complete restaurant visual identity featuring premium menu layouts, logo redesign, and social graphics.">
+
+View Case Study
+
+</button>
+
+</div>
+
+</div>
+
+<!-- 6 -->
+
+<div class="portfolio-item social">
+
+<img src="images/work6.jpg">
+
+<div class="portfolio-overlay">
+
+<span>Facebook Ads</span>
+
+<h3>
+
+High-Converting Ads
+
+</h3>
+
+<button
+
+class="view-project"
+
+data-image="images/work6.jpg"
+
+data-title="Facebook Advertising"
+
+data-description="Creative advertisements designed for paid campaigns with improved click-through rates and lead generation.">
+
+View Case Study
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="portfolio-bottom">
+
+<a href="#" class="primary-btn">
+
+View Full Portfolio
+
+</a>
 
 </div>
 
 </section>
 
-<!-- ================= ABOUT ================= -->
+<!-- =========================================
+AWARDS / ACHIEVEMENTS
+========================================= -->
 
-<section id="about" class="about">
+<section class="awards">
 
-<div class="section-title">
+<div class="section-header">
 
-<h2>About Habiora VA</h2>
+<span>WHY CLIENTS CHOOSE US</span>
 
-<p>Your trusted remote operations partner.</p>
+<h2>
+
+Creativity Meets
+Business Strategy
+
+</h2>
 
 </div>
 
-<div class="about-grid">
+<div class="awards-grid">
 
-<div class="about-card">
+<div class="award-card">
 
-<h3>Company Identity</h3>
+<h3>
+
+Premium Design
+
+</h3>
 
 <p>
 
-Habiora VA is a startup virtual assistance and business support agency built by two founders with a vision of helping businesses become more productive through smart operational support.
+Modern visuals inspired by world-class creative agencies.
 
 </p>
 
-<ul>
-
-<li>✔ Flexible</li>
-
-<li>✔ Responsive</li>
-
-<li>✔ Personal</li>
-
-<li>✔ Adaptable</li>
-
-<li>✔ Fast Execution</li>
-
-</ul>
-
 </div>
 
-<div class="about-card">
+<div class="award-card">
 
-<h3>Our Philosophy</h3>
+<h3>
 
-<blockquote>
+Business Focus
 
-"Efficiency, clarity, and human support are what allow businesses to scale—not complexity or size."
-
-</blockquote>
+</h3>
 
 <p>
 
-We remove operational friction so business owners can focus on closing deals, building relationships, increasing revenue, and scaling confidently.
+Every design is created with conversion and growth in mind.
 
 </p>
 
 </div>
 
-</div>
+<div class="award-card">
 
-</section>
+<h3>
 
-<!-- ================= MISSION ================= -->
+Reliable Support
 
-<section class="mission">
-
-<div class="mission-card">
-
-<i class="fas fa-bullseye"></i>
-
-<h2>Mission</h2>
+</h3>
 
 <p>
 
-To empower small businesses, startups, and real estate professionals through dependable virtual assistance that improves productivity and drives measurable growth.
+Fast communication,
+organized workflows,
+and dependable execution.
 
 </p>
 
 </div>
 
-<div class="mission-card">
+</div>
 
-<i class="fas fa-eye"></i>
+</section>
 
-<h2>Vision</h2>
+<!-- =========================================
+IMAGE LIGHTBOX
+========================================= -->
+
+<div class="image-modal" id="imageModal">
+
+<span class="close-image">&times;</span>
+
+<div class="modal-wrapper">
+
+<img
+id="expandedImage"
+src="">
+
+<div class="image-info">
+
+<span>
+
+Featured Project
+
+</span>
+
+<h2 id="imageTitle"></h2>
+
+<p id="imageDescription"></p>
+
+<div class="project-details">
+
+<div>
+
+<h4>
+
+Software
+
+</h4>
 
 <p>
 
-To become a globally trusted virtual assistance partner recognized for operational excellence, integrity, and human-centered support.
+Adobe Photoshop
 
 </p>
 
 </div>
 
-</section>
-<!-- ================= CORE VALUES ================= -->
+<div>
 
-<section class="values">
+<h4>
 
-    <div class="section-title">
+Category
 
-        <h2>Our Core Values</h2>
+</h4>
 
-        <p>The principles that guide every client relationship.</p>
+<p>
 
-    </div>
+Graphic Design
 
-    <div class="values-grid">
+</p>
 
-        <div class="value-card">
-            <i class="fas fa-shield-heart"></i>
-            <h3>Integrity</h3>
-            <p>We operate with honesty, transparency, and accountability in every interaction.</p>
-        </div>
+</div>
 
-        <div class="value-card">
-            <i class="fas fa-award"></i>
-            <h3>Excellence</h3>
-            <p>We consistently deliver high-quality work with attention to detail.</p>
-        </div>
+<div>
 
-        <div class="value-card">
-            <i class="fas fa-chart-line"></i>
-            <h3>Growth Mindset</h3>
-            <p>We continuously learn, improve, and adapt to better serve our clients.</p>
-        </div>
+<h4>
 
-        <div class="value-card">
-            <i class="fas fa-handshake"></i>
-            <h3>Ownership</h3>
-            <p>We treat every client's business with responsibility and care.</p>
-        </div>
+Industry
 
-        <div class="value-card">
-            <i class="fas fa-bolt"></i>
-            <h3>Efficiency</h3>
-            <p>We build smart systems that save time while maintaining quality.</p>
-        </div>
+</h4>
 
-    </div>
+<p>
 
-</section>
+Business
 
-<!-- ================= WHY CHOOSE US ================= -->
+</p>
 
-<section class="why">
+</div>
 
-    <div class="section-title">
+</div>
 
-        <h2>Why Choose Habiora VA?</h2>
+<button class="primary-btn">
 
-        <p>Small team. Big impact.</p>
+Start A Similar Project
 
-    </div>
+</button>
 
-    <div class="why-grid">
+</div>
 
-        <div class="why-card">
-            <i class="fas fa-user-group"></i>
-            <h3>Personalized Support</h3>
-            <p>We work closely with every client instead of treating them like a number.</p>
-        </div>
+</div>
 
-        <div class="why-card">
-            <i class="fas fa-gears"></i>
-            <h3>Modern Systems</h3>
-            <p>We integrate into your existing workflow and improve efficiency.</p>
-        </div>
+</div>
+<!-- =========================================
+TESTIMONIALS
+========================================= -->
 
-        <div class="why-card">
-            <i class="fas fa-clock"></i>
-            <h3>Save Time</h3>
-            <p>Focus on revenue while we manage the day-to-day operations.</p>
-        </div>
+<section class="testimonials">
 
-        <div class="why-card">
-            <i class="fas fa-earth-americas"></i>
-            <h3>Global Ready</h3>
-            <p>Supporting international businesses remotely from the Philippines.</p>
-        </div>
+    <div class="section-header">
 
-    </div>
+        <span>CLIENT FEEDBACK</span>
 
-</section>
-
-<!-- ================= SERVICES ================= -->
-
-<section id="services" class="services">
-
-    <div class="section-title">
-
-        <h2>Our Services</h2>
-
-        <p>Comprehensive virtual support designed to help businesses scale.</p>
-
-    </div>
-
-    <div class="services-grid">
-
-        <div class="service-card">
-
-            <i class="fas fa-users"></i>
-
-            <h3>Lead Management & Sales Support</h3>
-
-            <ul>
-
-                <li>Lead Generation</li>
-
-                <li>CRM Management</li>
-
-                <li>Cold Outreach</li>
-
-                <li>Appointment Setting</li>
-
-                <li>Sales Pipeline Tracking</li>
-
-                <li>Client Follow-Ups</li>
-
-            </ul>
-
-        </div>
-
-        <div class="service-card">
-
-            <i class="fas fa-laptop-file"></i>
-
-            <h3>Administrative Support</h3>
-
-            <ul>
-
-                <li>Email Management</li>
-
-                <li>Calendar Scheduling</li>
-
-                <li>Research</li>
-
-                <li>Document Organization</li>
-
-                <li>Workflow Coordination</li>
-
-                <li>Data Entry</li>
-
-            </ul>
-
-        </div>
-
-        <div class="service-card">
-
-            <i class="fas fa-palette"></i>
-
-            <h3>Creative & Marketing Support</h3>
-
-            <ul>
-
-                <li>Graphic Design</li>
-
-                <li>Social Media Graphics</li>
-
-                <li>Branding Materials</li>
-
-                <li>Content Scheduling</li>
-
-                <li>Campaign Assets</li>
-
-            </ul>
-
-        </div>
-
-        <div class="service-card">
-
-            <i class="fas fa-diagram-project"></i>
-
-            <h3>Business Operations Support</h3>
-
-            <ul>
-
-                <li>SOP Creation</li>
-
-                <li>Workflow Organization</li>
-
-                <li>CRM Cleanup</li>
-
-                <li>Internal Systems</li>
-
-                <li>Task Structuring</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= IDEAL CLIENT PROFILE ================= -->
-
-<section id="clients" class="clients">
-
-    <div class="section-title">
-
-        <h2>Ideal Client Profile</h2>
-
-        <p>We partner with businesses ready to scale.</p>
-
-    </div>
-
-    <div class="client-grid">
-
-        <div class="client-card">
-            <i class="fas fa-house"></i>
-            <h3>Real Estate Investors</h3>
-        </div>
-
-        <div class="client-card">
-            <i class="fas fa-building"></i>
-            <h3>Property Management Companies</h3>
-        </div>
-
-        <div class="client-card">
-            <i class="fas fa-scale-balanced"></i>
-            <h3>Law Firms</h3>
-        </div>
-
-        <div class="client-card">
-            <i class="fas fa-rocket"></i>
-            <h3>Startups & Founders</h3>
-        </div>
-
-        <div class="client-card">
-            <i class="fas fa-chart-simple"></i>
-            <h3>Marketing Agencies</h3>
-        </div>
-
-        <div class="client-card">
-            <i class="fas fa-briefcase"></i>
-            <h3>Service-Based Businesses</h3>
-        </div>
-
-    </div>
-
-    <div class="ideal-profile">
-
-        <h3>Our Ideal Client</h3>
-
-        <ul>
-
-            <li>✔ 2–50 Employees</li>
-
-            <li>✔ Fast-growing businesses</li>
-
-            <li>✔ Overwhelmed founders</li>
-
-            <li>✔ High volume of leads</li>
-
-            <li>✔ Uses CRM & digital systems</li>
-
-            <li>✔ Decision-makers involved in operations</li>
-
-        </ul>
-
-    </div>
-
-</section>
-<!-- ================= FOUNDERS ================= -->
-
-<section id="team" class="team">
-
-    <div class="section-title">
-
-        <h2>Meet the Founders</h2>
-
-        <p>The passionate professionals behind Habiora VA.</p>
-
-    </div>
-
-    <div class="team-container">
-
-        <div class="team-image">
-
-            <img src="images/founders.png" alt="Habiora VA Founders">
-
-        </div>
-
-        <div class="team-content">
-
-            <h3>Built on Expertise, Growth, and Service</h3>
-
-            <p>
-
-                Habiora VA is founded by two professionals committed to helping businesses
-                become more efficient through dependable virtual support.
-
-            </p>
-
-            <p>
-
-                One founder brings legal training, a psychology background as a Registered
-                Psychometrician in the Philippines, and experience in communication,
-                client intake, structured workflows, and business operations.
-
-            </p>
-
-            <p>
-
-                Together, the founders combine operational discipline, creativity,
-                adaptability, and a commitment to delivering excellent client experiences.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= BUSINESS OBJECTIVES ================= -->
-
-<section class="objectives">
-
-    <div class="section-title">
-
-        <h2>Business Objectives</h2>
-
-        <p>Our roadmap for sustainable growth.</p>
-
-    </div>
-
-    <div class="objectives-grid">
-
-        <div class="objective-card">
-
-            <i class="fas fa-flag"></i>
-
-            <h3>Short-Term Goals</h3>
-
-            <ul>
-
-                <li>Acquire our first 3–10 international clients.</li>
-
-                <li>Build strong client case studies.</li>
-
-                <li>Refine outreach and conversion systems.</li>
-
-                <li>Develop recurring monthly revenue.</li>
-
-                <li>Create scalable SOPs.</li>
-
-            </ul>
-
-        </div>
-
-        <div class="objective-card">
-
-            <i class="fas fa-globe"></i>
-
-            <h3>Long-Term Goals</h3>
-
-            <ul>
-
-                <li>Become a globally recognized VA agency.</li>
-
-                <li>Build specialized support teams.</li>
-
-                <li>Create opportunities for Filipino professionals.</li>
-
-                <li>Develop industry-specific service packages.</li>
-
-                <li>Transition into a team-led organization.</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= BRAND POSITIONING ================= -->
-
-<section class="brand">
-
-    <div class="section-title">
-
-        <h2>Brand Positioning</h2>
-
-    </div>
-
-    <div class="brand-box">
-
-        <blockquote>
-
-            "Habiora VA is a modern virtual assistance agency that helps
-            small businesses, startups, and real estate professionals
-            streamline operations, manage leads, and scale efficiently
-            through reliable remote support."
-
-        </blockquote>
+        <h2>
+            Businesses Love
+            Working With Us
+        </h2>
 
         <p>
-
-            We combine operational discipline, sales support expertise,
-            creative assistance, and human-centered execution to help
-            businesses grow without the burden of hiring full-time staff.
-
+            Every partnership is built on trust,
+            communication, and measurable results.
         </p>
 
     </div>
 
-</section>
+    <div class="testimonial-slider">
 
-<!-- ================= OPERATING PRINCIPLE ================= -->
+        <div class="testimonial-card active">
 
-<section class="principle">
+            <div class="stars">
+                ★★★★★
+            </div>
 
-    <div class="section-title">
+            <p>
 
-        <h2>Our Operating Principle</h2>
+                "Habiora VA helped organize our CRM and
+                appointment system. We immediately noticed
+                improved efficiency."
+
+            </p>
+
+            <div class="client">
+
+                <img src="images/client1.jpg" alt="Client">
+
+                <div>
+
+                    <h4>John Smith</h4>
+
+                    <span>Real Estate Investor</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+
+                "Professional, responsive, and creative.
+                Their graphic design elevated our entire
+                brand presence."
+
+            </p>
+
+            <div class="client">
+
+                <img src="images/client2.jpg" alt="Client">
+
+                <div>
+
+                    <h4>Sarah Williams</h4>
+
+                    <span>Marketing Agency</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+
+                "Their administrative support saved us
+                countless hours every week."
+
+            </p>
+
+            <div class="client">
+
+                <img src="images/client3.jpg" alt="Client">
+
+                <div>
+
+                    <h4>Michael Brown</h4>
+
+                    <span>Startup Founder</span>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <div class="principle-box">
+</section>
 
-        <h3>
+<!-- =========================================
+FAQ
+========================================= -->
 
-            "Does this help a business owner save time,
-            close more deals,
-            or operate more efficiently?"
+<section class="faq">
 
-        </h3>
+    <div class="section-header">
+
+        <span>FAQ</span>
+
+        <h2>
+
+            Frequently Asked Questions
+
+        </h2>
+
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                What services do you offer?
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+
+                    We specialize in lead generation,
+                    CRM management, administrative support,
+                    graphic design, marketing support,
+                    and business operations.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Do you work internationally?
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Yes. We support businesses from
+                    different countries remotely.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                How do we start?
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Simply schedule a free discovery call.
+                    We'll discuss your business needs
+                    and recommend the best solution.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+BOOKING SECTION
+========================================= -->
+
+<section class="booking" id="contact">
+
+    <div class="booking-left">
+
+        <span>BOOK A CALL</span>
+
+        <h2>
+
+            Let's Build Something
+            Amazing Together
+
+        </h2>
 
         <p>
 
-            If the answer is yes, we do it.
-            If not, we improve it.
+            Book a free consultation and discover
+            how Habiora VA can help your business
+            become more productive.
 
         </p>
+
+        <div class="booking-features">
+
+            <div>
+
+                <i class="fa-solid fa-check"></i>
+
+                30 Minute Strategy Session
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-check"></i>
+
+                Personalized Recommendations
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-check"></i>
+
+                No Obligation
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="booking-right">
+
+        <form id="bookingForm">
+
+            <input
+            type="text"
+            placeholder="Full Name"
+            required>
+
+            <input
+            type="email"
+            placeholder="Email Address"
+            required>
+
+            <input
+            type="text"
+            placeholder="Company Name">
+
+            <select>
+
+                <option>Select Service</option>
+
+                <option>Lead Generation</option>
+
+                <option>Administrative Support</option>
+
+                <option>Graphic Design</option>
+
+                <option>Business Operations</option>
+
+            </select>
+
+            <textarea
+            rows="6"
+            placeholder="Tell us about your business..."></textarea>
+
+            <button
+            class="primary-btn">
+
+                Schedule My Discovery Call
+
+            </button>
+
+        </form>
 
     </div>
 
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- =========================================
+CALL TO ACTION
+========================================= -->
 
-<section id="contact" class="contact">
+<section class="cta">
 
-    <div class="section-title">
+    <div class="cta-content">
 
-        <h2>Let's Build Something Great Together</h2>
+        <h2>
+
+            Ready To Grow
+            Your Business?
+
+        </h2>
 
         <p>
 
-            Ready to streamline your business operations?
-            We'd love to learn more about your goals.
+            Premium virtual assistance,
+            creative support,
+            and streamlined operations—
+            all in one place.
 
         </p>
 
-    </div>
+        <button
+        id="openModal"
+        class="primary-btn">
 
-    <div class="contact-card">
-
-        <h3>Get In Touch</h3>
-
-        <p><i class="fas fa-envelope"></i> habiorava@gmail.com</p>
-
-        <p><i class="fas fa-location-dot"></i> Philippines</p>
-
-        <p><i class="fas fa-clock"></i> Monday – Friday | 8:00 AM – 6:00 PM (PHT)</p>
-
-        <button id="openModal" class="call-btn">
-
-            📅 Book a Free Discovery Call
+            Get Started Today
 
         </button>
 
@@ -696,21 +1655,25 @@ To become a globally trusted virtual assistance partner recognized for operation
 
 </section>
 
-
-<!-- ================= FOOTER ================= -->
+<!-- =========================================
+FOOTER
+========================================= -->
 
 <footer>
 
-    <div class="footer-container">
+    <div class="footer-grid">
 
         <div>
 
-            <h2>Habiora <span>VA</span></h2>
+            <img
+            src="images/logo.png"
+            class="footer-logo"
+            alt="Habiora VA Logo">
 
             <p>
 
-                Helping businesses scale smarter through reliable,
-                human-centered virtual assistance.
+                Helping businesses scale smarter
+                through reliable virtual assistance.
 
             </p>
 
@@ -718,49 +1681,52 @@ To become a globally trusted virtual assistance partner recognized for operation
 
         <div>
 
-            <h3>Quick Links</h3>
+            <h3>
 
-            <a href="#home">Home</a>
+                Company
+
+            </h3>
 
             <a href="#about">About</a>
-
             <a href="#services">Services</a>
-
-            <a href="#clients">Clients</a>
-
+            <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
 
         </div>
 
         <div>
 
-            <h3>Services</h3>
+            <h3>
 
-            <p>Lead Management</p>
+                Contact
 
-            <p>Administrative Support</p>
+            </h3>
 
-            <p>Creative Support</p>
-
-            <p>Business Operations</p>
+            <p>📧 habiorava@gmail.com</p>
+            <p>📍 Philippines</p>
+            <p>Mon–Fri | 8:00 AM–6:00 PM</p>
 
         </div>
 
         <div>
 
-            <h3>Follow Us</h3>
+            <h3>
 
-            <a href="#"><i class="fab fa-facebook"></i></a>
+                Follow Us
 
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            </h3>
 
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="socials">
 
-            <a href="mailto:habiorava@gmail.com">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
 
-                <i class="fas fa-envelope"></i>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
 
-            </a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-behance"></i></a>
+
+            </div>
 
         </div>
 
@@ -768,14 +1734,8 @@ To become a globally trusted virtual assistance partner recognized for operation
 
     <div class="copyright">
 
-        <p>© 2026 Habiora VA. All Rights Reserved.</p>
+        © 2026 Habiora VA. All Rights Reserved.
 
     </div>
 
 </footer>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
