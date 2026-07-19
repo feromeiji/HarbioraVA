@@ -204,130 +204,88 @@ nav.classList.toggle("active");
 menu.classList.toggle("open");
 
 });
-/*=========================================================
-PORTFOLIO FILTER
-=========================================================*/
-
-const filterButtons=document.querySelectorAll(".portfolio-filter button");
-
-const portfolioItems=document.querySelectorAll(".portfolio-item");
-
-filterButtons.forEach(button=>{
-
-button.addEventListener("click",()=>{
-
-filterButtons.forEach(btn=>btn.classList.remove("active"));
-
-button.classList.add("active");
-
-const filter=button.dataset.filter;
-
-portfolioItems.forEach(item=>{
-
-if(filter==="all"){
-
-item.style.display="block";
-
-setTimeout(()=>{
-
-item.style.opacity="1";
-
-item.style.transform="scale(1)";
-
-},100);
-
-}
-
-else{
-
-if(item.classList.contains(filter)){
-
-item.style.display="block";
-
-setTimeout(()=>{
-
-item.style.opacity="1";
-
-item.style.transform="scale(1)";
-
-},100);
-
-}
-
-else{
-
-item.style.opacity="0";
-
-item.style.transform="scale(.8)";
-
-setTimeout(()=>{
-
-item.style.display="none";
-
-},300);
-
-}
-
-}
-
-});
-
-});
-
-});
 
 /*=========================================================
 PORTFOLIO POPUP
 =========================================================*/
 
-const modal=document.getElementById("imageModal");
+const modal = document.getElementById("imageModal");
+const gallery = document.getElementById("modalGallery");
+const modalTitle = document.getElementById("imageTitle");
+const modalDescription = document.getElementById("imageDescription");
+const closeBtn = document.querySelector(".close-image");
 
-const modalImage=document.getElementById("expandedImage");
+if (modal && gallery && modalTitle && modalDescription) {
 
-const modalTitle=document.getElementById("imageTitle");
+    document.querySelectorAll(".view-project").forEach(button => {
 
-const modalDescription=document.getElementById("imageDescription");
+        button.addEventListener("click", function (e) {
 
-const close=document.querySelector(".close-image");
+            e.preventDefault();
 
-document.querySelectorAll(".view-project").forEach(button=>{
+            modal.style.display = "flex";
 
-button.addEventListener("click",()=>{
+            document.body.style.overflow = "hidden";
 
-modal.style.display="flex";
+            // clear previous images
+            gallery.innerHTML = "";
 
-document.body.style.overflow="hidden";
+            // get multiple images
+            let images = this.dataset.images.split(",");
 
-modalImage.src=button.dataset.image;
+            images.forEach(image => {
 
-modalTitle.innerHTML=button.dataset.title;
+                let img = document.createElement("img");
+                img.src = image.trim();
+                gallery.appendChild(img);
 
-modalDescription.innerHTML=button.dataset.description;
+            });
+
+            modalTitle.textContent = this.dataset.title;
+
+            modalDescription.textContent = this.dataset.description;
+
+        });
+
+    });
+
+}
+
+if (closeBtn) {
+
+    closeBtn.addEventListener("click", () => {
+
+        modal.style.display = "none";
+
+        document.body.style.overflow = "auto";
+
+    });
+
+}
+
+window.addEventListener("click", function(e){
+
+    if(e.target===modal){
+
+        modal.style.display="none";
+
+        document.body.style.overflow="auto";
+
+    }
 
 });
 
+document.addEventListener("keydown", function(e){
+
+    if(e.key==="Escape"){
+
+        modal.style.display="none";
+
+        document.body.style.overflow="auto";
+
+    }
+
 });
-
-close.onclick=()=>{
-
-modal.style.display="none";
-
-document.body.style.overflow="auto";
-
-}
-
-window.onclick=(e)=>{
-
-if(e.target===modal){
-
-modal.style.display="none";
-
-document.body.style.overflow="auto";
-
-}
-
-}
-
 /*=========================================================
 FAQ
 =========================================================*/
@@ -677,7 +635,6 @@ console.log(
 );
 
 const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
 
 
 menuToggle.addEventListener("click", ()=>{
@@ -685,10 +642,6 @@ menuToggle.addEventListener("click", ()=>{
     navLinks.classList.toggle("active");
 
 });
-
-const menuToggle = document.querySelector(".menu-toggle");
-
-const navLinks = document.querySelector(".nav-links");
 
 
 menuToggle.addEventListener("click",()=>{
@@ -705,102 +658,5 @@ navLinks.classList.remove("active");
 });
 
 });
-/* =========================================
-BUSINESS OBJECTIVES
-========================================= */
 
-.objectives{
 
-padding:110px 8%;
-
-}
-
-.objectives-grid{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:35px;
-
-margin-top:60px;
-
-}
-
-.objective-card{
-
-background:rgba(255,255,255,.05);
-
-border:1px solid rgba(255,255,255,.08);
-
-backdrop-filter:blur(18px);
-
-border-radius:24px;
-
-padding:40px;
-
-transition:.35s;
-
-}
-
-.objective-card:hover{
-
-transform:translateY(-10px);
-
-border-color:rgba(255,255,255,.18);
-
-}
-
-.objective-icon{
-
-width:70px;
-
-height:70px;
-
-border-radius:50%;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-background:rgba(255,255,255,.08);
-
-margin-bottom:25px;
-
-font-size:30px;
-
-}
-
-.objective-card h3{
-
-margin-bottom:20px;
-
-font-size:28px;
-
-}
-
-.objective-card ul{
-
-padding-left:20px;
-
-line-height:2;
-
-}
-
-.objective-card li{
-
-margin-bottom:10px;
-
-}
-
-@media(max-width:768px){
-
-.objectives-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
